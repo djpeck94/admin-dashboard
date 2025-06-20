@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  background-color: #f9fafb;
+}
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+*****************
+*****************
+*****************
+end of reset
+*****************
+*****************
+*****************
+*/
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 20vh 1fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar dashboard";
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  grid-area: header;
+  background-color: red;
+  border: 2px solid black;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: blue;
+  border: 2px solid black;
+  height: 100vh;
+}
+
+.dashboard {
+  grid-area: dashboard;
+  background-color: green;
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "smallcard1 smallcard2 tallcard1"
+    "smallcard3 smallcard4"
+    "smallcard5 smallcard6 tallcard2";
+}
+
+.dashboard-element {
+  border: 2px solid black;
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+}
