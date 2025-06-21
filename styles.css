@@ -65,7 +65,7 @@ end of reset
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 20vh 4fr;
   grid-template-rows: 20vh 1fr;
   grid-template-areas:
     "sidebar header"
@@ -81,11 +81,47 @@ end of reset
   border: 2px solid black;
 }
 
+.header-top {
+  display: flex;
+  margin: 5px;
+  background-color: purple;
+}
+
+.header-top > * {
+  background-color: gray;
+  margin: 5px;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+#search-bar {
+  flex-grow: 1;
+}
+
+.header-bottom {
+  display: flex;
+  margin: 5px;
+  background-color: darkcyan;
+}
+
+.header-bottom > * {
+  background-color: gray;
+  margin: 5px;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.user-hello {
+  flex-grow: 1;
+}
+
 .sidebar {
   grid-area: sidebar;
-  background-color: blue;
+  background-color: #1992d4;
   border: 2px solid black;
   height: 100vh;
+  display: flex-box;
+  flex-direction: column;
 }
 
 .dashboard {
@@ -106,4 +142,18 @@ end of reset
   background-color: white;
   margin: 10px;
   padding: 10px;
+}
+
+.sidebar > * {
+  margin: 5px;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.sidebar-title {
+  background-color: aqua;
+}
+
+.sidebar-element {
+  background-color: lightblue;
 }
