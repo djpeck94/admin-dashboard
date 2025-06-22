@@ -163,7 +163,7 @@ end of reset
   display: flex;
   flex-direction: row;
 }
-.sidebar-element-single > * {
+.sidebar-row > * {
   margin: 5px;
   border: 2px solid black;
   padding: 5px;
