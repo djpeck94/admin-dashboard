@@ -65,7 +65,7 @@ end of reset
 
 .container {
   display: grid;
-  grid-template-columns: 20vh 4fr;
+  grid-template-columns: 30vh 4fr;
   grid-template-rows: 20vh 1fr;
   grid-template-areas:
     "sidebar header"
@@ -154,6 +154,17 @@ end of reset
   background-color: aqua;
 }
 
-.sidebar-element {
+.sidebar-element-group {
   background-color: lightblue;
+}
+
+.sidebar-element-single {
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: row;
+}
+.sidebar-element-single > * {
+  margin: 5px;
+  border: 2px solid black;
+  padding: 5px;
 }
