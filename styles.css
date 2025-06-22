@@ -124,7 +124,30 @@ end of reset
   flex-direction: column;
 }
 
-.dashboard {
+.sidebar > * {
+  margin: 10px;
+  border: 2px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+#sidebar-title {
+  background-color: aqua;
+}
+
+/* .sidebar-element-single {
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: row;
+} */
+.sidebar-row > * {
+  margin: 2px;
+  border: 2px solid black;
+  padding: 2px;
+}
+
+/* .dashboard {
   grid-area: dashboard;
   background-color: green;
   border: 2px solid black;
@@ -135,6 +158,33 @@ end of reset
     "smallcard1 smallcard2 tallcard1"
     "smallcard3 smallcard4"
     "smallcard5 smallcard6 tallcard2";
+} */
+
+.dashboard {
+  grid-area: dashboard;
+  background-color: green;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  padding: 10px;
+}
+
+.dashboard-project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: purple;
+  margin: 10px;
+  padding: 10px;
+}
+
+.dashboard-right-container {
+  display: flex;
+  flex-direction: column;
+  background-color: lightblue;
+  margin: 10px;
+  padding: 10px;
 }
 
 .dashboard-element {
@@ -142,29 +192,5 @@ end of reset
   background-color: white;
   margin: 10px;
   padding: 10px;
-}
-
-.sidebar > * {
-  margin: 5px;
-  border: 2px solid black;
-  padding: 5px;
-}
-
-.sidebar-title {
-  background-color: aqua;
-}
-
-.sidebar-element-group {
-  background-color: lightblue;
-}
-
-.sidebar-element-single {
-  background-color: lightgreen;
-  display: flex;
-  flex-direction: row;
-}
-.sidebar-row > * {
-  margin: 5px;
-  border: 2px solid black;
-  padding: 5px;
+  flex-grow: 1;
 }
