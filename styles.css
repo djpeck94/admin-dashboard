@@ -187,10 +187,41 @@ end of reset
   padding: 10px;
 }
 
-.dashboard-element {
+.dashboard-card {
   border: 2px solid black;
   background-color: white;
   margin: 10px;
   padding: 10px;
   flex-grow: 1;
+}
+
+.project-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.announcement {
+  background-color: lightyellow;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.trending-user {
+  background-color: lightgreen;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.trending-user-details {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px;
 }
