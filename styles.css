@@ -173,8 +173,8 @@ end of reset
 
 .sidebar > * {
   margin: 10px;
-  border: 2px solid black;
-  padding: 10px;
+  /* border: 2px solid black; */
+  /* padding: 10px; */
   display: flex;
   flex-direction: row;
 }
@@ -190,8 +190,9 @@ end of reset
 } */
 .sidebar-row > * {
   margin: 2px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   padding: 2px;
+  color: white;
 }
 
 /* .dashboard {
